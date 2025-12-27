@@ -16,7 +16,7 @@ import python from "../assets/language/python.png";
 import sql from "../assets/language/MySQL.png";
 import mongodb from "../assets/language/MongoDB.png";
 import bootstrap from "../assets/language/bootstrap.png";
-import api from "../assets/language/restAPI.png";
+import api from "../assets/language/RestAPI.png";
 import c from "../assets/language/c.png";
 
 export const tools = [
