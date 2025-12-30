@@ -3,30 +3,6 @@ import { listProject } from "../components/project.list.js";
 import "../App.css";
 
 function ProjectPage({ setSelectProject }) {
-  const [showAll, setShowAll] = useState(false);
-  const [isLgScreen, setIsLgScreen] = useState(
-    window.innerWidth >= 992
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsLgScreen(window.innerWidth >= 992);
-      if (window.innerWidth >= 992) {
-        setShowAll(true);
-      } else {
-        setShowAll(false);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
-  const visibleProjects =
-    isLgScreen || showAll
-      ? listProject
-      : listProject.slice(0, 3);
 
   return (
     <div id="projects" className="pt-4">
@@ -34,7 +10,7 @@ function ProjectPage({ setSelectProject }) {
         <p className="h3 text-info text-center mb-4">Projects</p>
 
         <div className="row justify-content-center g-4 mx-lg-5 mx-1">
-          {visibleProjects.map((project) => (
+          {listProject.map((project) => (
             <div
               key={project.id}
               className="col-12 col-sm-6 col-lg-4"
@@ -59,16 +35,6 @@ function ProjectPage({ setSelectProject }) {
           ))}
         </div>
 
-        {!isLgScreen && (
-          <div className="text-center mt-4">
-            <button
-              className="btn btn-outline-info btn-sm"
-              onClick={() => setShowAll(!showAll)}
-            >
-              {showAll ? "Show Less" : "View More"}
-            </button>
-          </div>
-        )}
       </section>
     </div>
   );

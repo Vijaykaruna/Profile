@@ -20,12 +20,12 @@ function Navbar() {
           Vijay Karunanithi
         </a>
         <button
-          className="navbar-toggler border-0 p-0"
+          className="navbar-toggler p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
         >
-          <CgMenuGridR className="text-light fs-1" />
+          <CgMenuGridR className="text-light border-0 fs-1" />
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

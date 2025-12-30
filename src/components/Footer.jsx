@@ -8,10 +8,22 @@ import { HiMiniHeart } from "react-icons/hi2";
 
 function Footer() {
   const icons = [
-    { icon: <FaLinkedin className="fs-2 text-light" />, link: "https://www.linkedin.com/in/vijaykaruna/" },
-    { icon: <FaSquareGithub className="fs-2 text-light" />, link: "https://github.com/Vijaykaruna" },
-    { icon: <SiLeetcode className="fs-2 text-light" />, link: "https://www.leetcode.com/vijaykarunanithi2003" },
-    { icon: <IoLogoInstagram className="fs-2 text-light" />, link: "https://www.instagram.com/vijxy_kr?igsh=MWp2aWsxcTk3bTNxaA==" },
+    {
+      icon: <FaLinkedin className="fs-2 text-light" />,
+      link: "https://www.linkedin.com/in/vijaykaruna/",
+    },
+    {
+      icon: <FaSquareGithub className="fs-2 text-light" />,
+      link: "https://github.com/Vijaykaruna",
+    },
+    {
+      icon: <SiLeetcode className="fs-2 text-light" />,
+      link: "https://www.leetcode.com/vijaykarunanithi2003",
+    },
+    {
+      icon: <IoLogoInstagram className="fs-2 text-light" />,
+      link: "https://www.instagram.com/vijxy_kr?igsh=MWp2aWsxcTk3bTNxaA==",
+    },
   ];
   const navItems = [
     { name: "About", link: "about" },
@@ -25,7 +37,7 @@ function Footer() {
         <div className="d-flex justify-content-evenly align-items-center flex-lg-row flex-column">
           <div className="d-flex justify-content-center flex-column align-items-center">
             <img src={logo} alt="" className="img-fluid foot-img" />
-            <div className="">
+            <div>
               <ul className="navbar-nav d-flex flex-row justify-content-center gap-3">
                 {navItems.map((item, index) => (
                   <li className="nav-item" key={index}>

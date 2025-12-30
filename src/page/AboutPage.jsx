@@ -43,7 +43,7 @@ function AboutPage() {
             </div>
             <div className="border my-3"></div>
             <div className="my-3">
-                <button className="btn btn-primary">Download Resume <FaDownload className="mb-2"/></button>
+                <a href="https://drive.google.com/file/d/1P1FfLnc_oP5xUKfryn4Um6MqSKrlEn2R/view?usp=sharing" target="_blank" className="btn btn-primary">Download Resume <FaDownload className="mb-2"/></a>
             </div>
           </div>
         </div>
