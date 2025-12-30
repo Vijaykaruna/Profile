@@ -15,7 +15,7 @@ function ContactPage() {
     {
       name: "Email Address",
       icon: <IoMail className="fs-3" />,
-      value: "vijaykarunanithi2003@gmail.com",
+      value: "krvijayinfo@gmail.com",
     },
     {
       name: "Address",
