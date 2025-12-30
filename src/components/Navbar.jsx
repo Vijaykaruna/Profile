@@ -20,7 +20,7 @@ function Navbar() {
           Vijay Karunanithi
         </a>
         <button
-          className="navbar-toggler p-0"
+          className="navbar-toggler border-0 p-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
