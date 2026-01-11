@@ -1,25 +1,16 @@
 import image from "../assets/Vijay.png";
 import "../App.css";
-import React, { useEffect, useState } from "react";
 import { BsFillSendFill } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaSquareGithub } from "react-icons/fa6";
 import { SiLeetcode } from "react-icons/si";
 import { IoArrowDownSharp } from "react-icons/io5";
+import Typewriter from "typewriter-effect";
 
 const titles = ["JAVA", "MERN"];
 
 function HomePage() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % titles.length);
-    }, 3000);
-
-    return () => clearInterval(interval);
-  }, []);
 
   const icons = [
     {
@@ -52,25 +43,21 @@ function HomePage() {
               <p className="h1 fw-bold">Hii, I am Vijay K</p>
             </div>
 
-            <div className="d-flex justify-content-center align-items-center gap-2 pb-2">
-              <div className="overflow-hidden" style={{ height: "30px" }}>
-                <div
-                  className="scroll-text"
-                  style={{
-                    transform: `translateY(-${index * 30}px)`,
+            <div className="d-flex justify-content-center align-items-center pb-2">
+              <span style={{ minWidth: "100px", textAlign: "right", fontSize: "30px", fontWeight:"bold" }}>
+                <Typewriter
+                  options={{
+                    strings: ["MERN", "Java"],
+                    autoStart: true,
+                    loop: true,
+                    delay: 200,
+                    pauseFor: 1500,
+                    deleteSpeed: 200,
                   }}
-                >
-                  {titles.map((title, i) => (
-                    <h4
-                      key={i}
-                      className="text-light fw-bold fs-3 m-0 home-role"
-                    >
-                      {title}
-                    </h4>
-                  ))}
-                </div>
-              </div>
-              <p className="h3 text-info m-0">Full Stack Developer</p>
+                />
+              </span>
+
+              <span className="h3 text-info m-0 pt-1">Full Stack Developer</span>
             </div>
 
             <div className="home-line my-3">
@@ -96,7 +83,10 @@ function HomePage() {
           </div>
         </div>
         <div className="text-center text-light">
-          <p>Scroll down</p> <a href="#about" className="text-light"><IoArrowDownSharp /></a>
+          <p>Scroll down</p>{" "}
+          <a href="#about" className="text-light">
+            <IoArrowDownSharp />
+          </a>
         </div>
       </section>
     </div>
