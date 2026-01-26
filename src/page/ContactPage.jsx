@@ -3,7 +3,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillSendFill } from "react-icons/bs";
-import { sendEmail } from "../components/email";
+import { sendEmail } from "../components/email.js";
 
 function ContactPage() {
   const contact = [

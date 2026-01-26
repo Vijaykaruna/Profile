@@ -72,6 +72,7 @@ html {
 
 .nav-link:hover::after{
   width: 100%;
+  color: #000f63;
 }
 
 .nav-link.active {

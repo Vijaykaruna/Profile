@@ -33,13 +33,13 @@ function Navbar() {
             {navItems.map((item, index) => (
               <li className="nav-item" key={index}>
                 <a
-                  href={`#${item.href}`}   // ✅ FIX
+                  href={`#${item.href}`}
                   className={`nav-link text-light ${
                     active === item.title ? "active" : ""
                   }`}
                   onClick={() => setActive(item.title)}
                 >
-                  {item.title}           {/* ✅ FIX */}
+                  {item.title}
                 </a>
               </li>
             ))}

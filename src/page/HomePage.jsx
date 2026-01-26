@@ -1,4 +1,4 @@
-import image from "../assets/Vijay.png";
+import image from "../assets/Vijay-image.png";
 import "../App.css";
 import { BsFillSendFill } from "react-icons/bs";
 import { FaLinkedin } from "react-icons/fa";
