@@ -20,8 +20,8 @@ import tempQuiz from "../assets/image/img-quiz.jpg";
       template: tempGuestie,
       img: guestie,
       desc: "This website organizated for hotel management system. By using time reduce and order the foods also track the foods details. The Rating system to knows the review in the hotel management.",
-      link: "none",
-      repo: "https://github.com/Vijaykaruna/Ecom_Guestie",
+      link: "https://smart-hotel-food-ordering-system-1.onrender.com",
+      repo: "https://github.com/Vijaykaruna/Smart_Hotel_Food_Ordering_System",
     },
     {
       id: "todo",
