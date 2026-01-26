@@ -34,7 +34,7 @@ function HomePage() {
   return (
     <div id="home" className="pt-4">
       <section className="mx-lg-5 rounded-2 mx-2 bg-color py-4">
-        <div className="d-flex justify-content-around flex-column flex-lg-row align-items-center py-5 gap-5">
+        <div className="d-flex justify-content-around flex-column flex-lg-row align-items-center py-4 gap-5">
           <div>
             <img src={image} alt="vijay" className="img-fluid home-img" />
           </div>

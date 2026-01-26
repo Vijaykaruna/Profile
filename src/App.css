@@ -12,8 +12,8 @@ body::before {
   inset: 0;
   background: linear-gradient(
     -45deg,
-    #960000,
-    #1a8300,
+    #ff0000,
+    #ca0000,
     #000f63,
     #12001c,
     #050008
@@ -126,6 +126,7 @@ html {
 .home-img{
   width: 400px;
   filter: drop-shadow(10px 10px 10px #00c3ffab);
+  margin-top: -140px;
 }
 .home-line{
   width: 400px;
